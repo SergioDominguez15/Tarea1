@@ -6,31 +6,60 @@ using System.Threading.Tasks;
 
 namespace Tarea1
 {
-    internal class Empleado
+    class Empleado
     {
-        internal string Nombre;
-        internal string apellido1;
-        internal string apellido2;
-        internal int edad;
-        internal string nif;
-        internal Double salario;
+        string nombre;
+        string apellido1;
+        string apellido2;
+        int edad;
+        string nif;
+        double salario;
 
-        public Empleado()
+        public string Nombre
         {
+            get { return nombre; }
+            set { nombre = value; }
         }
-
-        public Empleado(string nombre, string apellido1, string apellido2, int edad, string nif, Double salario)
+        public string Apellido1
         {
-            this.Nombre = nombre;
+            get { return apellido1; }
+            set { apellido1 = value; }
+        }
+        public string Apellido2
+        {
+            get { return apellido2; }
+            set { apellido2 = value; }
+        }
+        public double Salario
+        {
+            get { return salario; }
+            set { salario = value; }
+        }
+        public int Edad
+        {
+            get { return edad; }
+            set { edad = value; }
+        }
+        public string Nif
+        {
+            get { return nif; }
+            set { nif = value; }
+        }
+        public Empleado(string nombre, string apellido1, string apellido2, int edad, string nif, double salario)
+        {
+            this.nombre = nombre;
             this.apellido1 = apellido1;
             this.apellido2 = apellido2;
             this.edad = edad;
             this.nif = nif;
             this.salario = salario;
-
         }
 
 
+        public String NombreCompleto(string nombre, string apellido1, string apellido2)
+        {
+            return $"{nombre} {apellido1} {apellido2}";
+        }
 
     }
 }
