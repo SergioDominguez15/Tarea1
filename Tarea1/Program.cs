@@ -1,4 +1,10 @@
-﻿using System;
+﻿///////////////////////////////////////////
+// Tarea: UD2T1
+// Alumno/a: Sergio Dominguez Gomez
+// Curso: 2022/2023
+///////////////////////////////////////////
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
